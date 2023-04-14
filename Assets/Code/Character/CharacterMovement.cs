@@ -5,6 +5,7 @@ using UnityEngine;
 public class CharacterMovement : MonoBehaviour
 {
     private Rigidbody2D cmpRb;
+    private SpriteRenderer cmpSR;
 
     [Header("Character")]
     [SerializeField] private float movementSpeed;
@@ -13,6 +14,7 @@ public class CharacterMovement : MonoBehaviour
     private void Start()
     {
         cmpRb = GetComponent<Rigidbody2D>();
+        cmpSR = GetComponent<SpriteRenderer>();
     }
 
     private void Update()
@@ -24,10 +26,12 @@ public class CharacterMovement : MonoBehaviour
     {
         if (orientRight)
         {
+            cmpSR.flipX = false;
             cmpRb.velocity = new Vector2(movementSpeed, cmpRb.velocity.y);
         }
         else
         {
+            cmpSR.flipX = true;
             cmpRb.velocity = new Vector2(-movementSpeed, cmpRb.velocity.y);
         }
     }
