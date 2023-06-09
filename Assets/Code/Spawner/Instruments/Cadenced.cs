@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Spawner : MonoBehaviour
+public class Cadenced : MonoBehaviour
 {
     [Header("Prefab")]
     public GameObject character;
@@ -24,7 +24,7 @@ public class Spawner : MonoBehaviour
         {
             if (!delayDone) startDelay -= Time.deltaTime;
 
-            if (startDelay <= 0)
+            if (startDelay <= 0) 
             {
                 if (!delayDone) Spawn();
                 delayDone = true;
