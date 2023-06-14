@@ -5,6 +5,7 @@ using UnityEngine;
 public class GameManager : TemporalSingleton<GameManager>
 {
     public bool gameStarted;
+    public bool gameMode;
 
     private void Update()
     {

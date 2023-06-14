@@ -9,9 +9,9 @@ public class UnCadenced : MonoBehaviour
 
     [Header("Spawner Settings")]
     [SerializeField] private float spawnTime  = 0;
-    [SerializeField] private float startDelay = 0;
+    // [SerializeField] private float startDelay = 0;
     [SerializeField] private float innerDelay = 0;
-                     private bool  delayDone  = false;
+                     // private bool  delayDone  = false;
                      private bool  canSpawn   = true;
                      private float spawnTimer = 0;
                      private float innerTimer = 0;

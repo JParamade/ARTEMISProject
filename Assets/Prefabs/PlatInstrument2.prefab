@@ -102,11 +102,11 @@ MonoBehaviour:
   CollisionTag: 
   EventReference:
     Guid:
-      Data1: -1255747215
-      Data2: 1080924959
-      Data3: 1759596200
-      Data4: -2000892601
-    Path: event:/CongaBounceHigh
+      Data1: 1938345093
+      Data2: 1209646912
+      Data3: -1668260952
+      Data4: -914044718
+    Path: event:/CongaBounceLow
   Event: 
   PlayEvent: 9
   StopEvent: 0
