@@ -19,7 +19,7 @@ public class CharacterMovement : MonoBehaviour
 
     private void Update()
     {
-        Movement();
+        // Movement();
     }
 
     private void Movement()
